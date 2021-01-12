@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/css-reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Tip Calculator</title>
+</head>
+<body>
+
+<section class="form-container">
+  <h1>Tip Calculator</h1>
+  <hr>
+  <div class="question-container">
+    <label for="amount">What is the bill amount?</label>
+    <input type="text" name="amount" id="amount">
+  </div>
+  <div class="question-container">
+    <label for="guests">How many guests are splitting the bill?</label>
+    <input type="number" name="guests" id="guests">
+  </div>
+  <div class="question-container">
+    <label for="tip">What percentage would you like to tip?</label>
+    <input type="text" name="tip" id="tip">
+  </div>
+  <div class="button">
+    <button id="calculate">Calculate</button>
+  </div>
+</section>
+<section class="results-container">
+  <h1>Results</h1>
+  <hr>
+  <div class="result-item">
+    <p class="res-label">Amount Per Person <span class="note">(not including the tip):</span></p>
+    <span id="amount-res"></span>
+  </div>
+  <div class="result-item">
+    <p class="res-label">Tip Amount <span class="note">(for total bill):</span></p>
+    <span id="tip-res"></span>
+  </div>
+</section>
+
+<script type="text/javascript" src="scripts/app.js">
+
+</script>
+</body>
+</html>

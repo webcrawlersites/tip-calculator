@@ -34,16 +34,11 @@ const calculate = () => {
   printInfoToEl(tipRes, amountToTip);
 }
 
-btn.addEventListener('click', calculate);
+btn.addEventListener('click', () => {
+  calculate();
+});
 document.addEventListener('keydown', (e) => {
   if(e.keyCode === 13) {
-    let billVal = getInputValue(bill);
-    let guestsVal = getInputValue(guests);
-    let tipVal = getInputValue(tip);
-    let amountPerPersonVal = calcAmountPerPerson(guestsVal, billVal);
-    let amountToTip = calcTip(billVal, tipVal);
-
-    printInfoToEl(amountRes, amountPerPersonVal);
-    printInfoToEl(tipRes, amountToTip);
+    calculate();
   }
 });

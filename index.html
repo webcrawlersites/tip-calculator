@@ -16,7 +16,7 @@
   <hr>
   <div class="question-container">
     <label for="amount">What is the bill amount?</label>
-    <input type="text" name="amount" id="amount">
+    <input type="number" min="0.00" step="any" name="amount" id="amount">
   </div>
   <div class="question-container">
     <label for="guests">How many guests are splitting the bill?</label>
@@ -24,7 +24,7 @@
   </div>
   <div class="question-container">
     <label for="tip">What percentage would you like to tip?</label>
-    <input type="text" name="tip" id="tip">
+    <input type="number" name="tip" id="tip">
   </div>
   <div class="button">
     <button id="calculate">Calculate</button>
